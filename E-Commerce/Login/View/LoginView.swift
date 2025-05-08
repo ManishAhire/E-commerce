@@ -9,7 +9,7 @@ import SwiftUI
 
 struct LoginView: View {
     
-    @State private var userName: String = String()
+    @State private var phoneNumber: String = String()
     
     var body: some View {
         NavigationStack {
@@ -25,16 +25,16 @@ struct LoginView: View {
                 
                 Text("Enter your Phone Number")
                 
-                TextField("Phone Number", text: $userName)
+                TextField("Phone Number", text: $phoneNumber)
                     .textFieldStyle(.roundedBorder)
                     .frame(height: 60)
                     .keyboardType(.phonePad)
                     
                 
                 NavigationLink("Login using OTP") {
-                    Text("Verify with OPT")
+                    VerifyOTP(phoneNumber: $phoneNumber)
                 }
-                .disabled(userName.count < 10)
+                .disabled(phoneNumber.count < 10)
                 .buttonStyle(.borderedProminent)
             }
             .padding()
