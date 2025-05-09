@@ -31,7 +31,7 @@ struct VerifyOTP: View {
         }
         .padding()
         .fullScreenCover(isPresented: $pushToHomeScreen) {
-            Text("Home Screen")
+            TabBarView()
         }
     }
 }

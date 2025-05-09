@@ -11,19 +11,19 @@ struct TabBarView: View {
     var body: some View {
         TabView {
             
-            Tab("Home", image: "home") {
+            Tab("Home", systemImage: "house") {
                 HomeView()
             }
             
-            Tab("Category", image: "category") {
+            Tab("Category", systemImage: "basket") {
                 CategoryView()
             }
             
-            Tab("Account", image: "user") {
+            Tab("Account", systemImage: "person") {
                 AccountView()
             }
             
-            Tab("Cart", image: "cart") {
+            Tab("Cart", systemImage: "cart") {
                 CartView()
             }
         }
