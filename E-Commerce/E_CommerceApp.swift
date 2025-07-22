@@ -12,7 +12,7 @@ import SwiftData
 struct E_CommerceApp: App {
     var body: some Scene {
         WindowGroup {
-            LoginView()
+            TabBarView()
         }
     }
 }

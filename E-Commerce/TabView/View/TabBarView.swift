@@ -15,16 +15,20 @@ struct TabBarView: View {
                 HomeView()
             }
             
-            Tab("Category", systemImage: "basket") {
-                CategoryView()
+            Tab("You", systemImage: "person") {
+                AccountView()
             }
             
-            Tab("Account", systemImage: "person") {
-                AccountView()
+            Tab("More", systemImage: "square.2.layers.3d") {
+                MoreView()
             }
             
             Tab("Cart", systemImage: "cart") {
                 CartView()
+            }
+            
+            Tab("Menu", systemImage: "line.3.horizontal") {
+                CategoryView()
             }
         }
     }

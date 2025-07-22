@@ -6,6 +6,11 @@
 	objectVersion = 77;
 	objects = {
 
+/* Begin PBXBuildFile section */
+		13F0A7252E09B64700F1BA26 /* Development.xcconfig in Resources */ = {isa = PBXBuildFile; fileRef = 13F0A7242E09B64700F1BA26 /* Development.xcconfig */; };
+		13F0A7272E09B66100F1BA26 /* Production.xcconfig in Resources */ = {isa = PBXBuildFile; fileRef = 13F0A7262E09B66100F1BA26 /* Production.xcconfig */; };
+/* End PBXBuildFile section */
+
 /* Begin PBXContainerItemProxy section */
 		135498522DCB9D1100D2AF3B /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
@@ -27,11 +32,26 @@
 		1354983F2DCB9D0E00D2AF3B /* E-Commerce.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "E-Commerce.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		135498512DCB9D1100D2AF3B /* E-CommerceTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "E-CommerceTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		1354985B2DCB9D1100D2AF3B /* E-CommerceUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "E-CommerceUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		13F0A7242E09B64700F1BA26 /* Development.xcconfig */ = {isa = PBXFileReference; lastKnownFileType = text.xcconfig; path = Development.xcconfig; sourceTree = "<group>"; };
+		13F0A7262E09B66100F1BA26 /* Production.xcconfig */ = {isa = PBXFileReference; lastKnownFileType = text.xcconfig; path = Production.xcconfig; sourceTree = "<group>"; };
 /* End PBXFileReference section */
+
+/* Begin PBXFileSystemSynchronizedBuildFileExceptionSet section */
+		13F0A72D2E09C3FC00F1BA26 /* Exceptions for "E-Commerce" folder in "E-Commerce" target */ = {
+			isa = PBXFileSystemSynchronizedBuildFileExceptionSet;
+			membershipExceptions = (
+				Info.plist,
+			);
+			target = 1354983E2DCB9D0E00D2AF3B /* E-Commerce */;
+		};
+/* End PBXFileSystemSynchronizedBuildFileExceptionSet section */
 
 /* Begin PBXFileSystemSynchronizedRootGroup section */
 		135498412DCB9D0E00D2AF3B /* E-Commerce */ = {
 			isa = PBXFileSystemSynchronizedRootGroup;
+			exceptions = (
+				13F0A72D2E09C3FC00F1BA26 /* Exceptions for "E-Commerce" folder in "E-Commerce" target */,
+			);
 			path = "E-Commerce";
 			sourceTree = "<group>";
 		};
@@ -75,6 +95,8 @@
 		135498362DCB9D0E00D2AF3B = {
 			isa = PBXGroup;
 			children = (
+				13F0A7262E09B66100F1BA26 /* Production.xcconfig */,
+				13F0A7242E09B64700F1BA26 /* Development.xcconfig */,
 				135498412DCB9D0E00D2AF3B /* E-Commerce */,
 				135498542DCB9D1100D2AF3B /* E-CommerceTests */,
 				1354985E2DCB9D1100D2AF3B /* E-CommerceUITests */,
@@ -212,6 +234,8 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				13F0A7252E09B64700F1BA26 /* Development.xcconfig in Resources */,
+				13F0A7272E09B66100F1BA26 /* Production.xcconfig in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -271,6 +295,7 @@
 /* Begin XCBuildConfiguration section */
 		135498632DCB9D1100D2AF3B /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 13F0A7242E09B64700F1BA26 /* Development.xcconfig */;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
 				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
@@ -334,6 +359,7 @@
 		};
 		135498642DCB9D1100D2AF3B /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 13F0A7262E09B66100F1BA26 /* Production.xcconfig */;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
 				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
@@ -399,6 +425,9 @@
 				DEVELOPMENT_TEAM = 9F49W83KP5;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = "E-Commerce/Info.plist";
+				INFOPLIST_KEY_CFBundleDisplayName = Amazon;
+				INFOPLIST_KEY_LSApplicationCategoryType = "public.app-category.shopping";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
@@ -411,6 +440,10 @@
 				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = "com.manishahire.E-Commerce";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
+				SUPPORTS_MACCATALYST = NO;
+				SUPPORTS_MAC_DESIGNED_FOR_IPHONE_IPAD = NO;
+				SUPPORTS_XR_DESIGNED_FOR_IPHONE_IPAD = NO;
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -428,6 +461,9 @@
 				DEVELOPMENT_TEAM = 9F49W83KP5;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = "E-Commerce/Info.plist";
+				INFOPLIST_KEY_CFBundleDisplayName = Amazon;
+				INFOPLIST_KEY_LSApplicationCategoryType = "public.app-category.shopping";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
@@ -440,6 +476,10 @@
 				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = "com.manishahire.E-Commerce";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
+				SUPPORTS_MACCATALYST = NO;
+				SUPPORTS_MAC_DESIGNED_FOR_IPHONE_IPAD = NO;
+				SUPPORTS_XR_DESIGNED_FOR_IPHONE_IPAD = NO;
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";

@@ -4,10 +4,40 @@
 <dict>
 	<key>SchemeUserState</key>
 	<dict>
+		<key>E-Commerce-DEV.xcscheme_^#shared#^_</key>
+		<dict>
+			<key>isShown</key>
+			<true/>
+			<key>orderHint</key>
+			<integer>0</integer>
+		</dict>
+		<key>E-Commerce-PROD.xcscheme_^#shared#^_</key>
+		<dict>
+			<key>orderHint</key>
+			<integer>2</integer>
+		</dict>
 		<key>E-Commerce.xcscheme_^#shared#^_</key>
 		<dict>
 			<key>orderHint</key>
-			<integer>0</integer>
+			<integer>1</integer>
+		</dict>
+	</dict>
+	<key>SuppressBuildableAutocreation</key>
+	<dict>
+		<key>1354983E2DCB9D0E00D2AF3B</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>135498502DCB9D1100D2AF3B</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>1354985A2DCB9D1100D2AF3B</key>
+		<dict>
+			<key>primary</key>
+			<true/>
 		</dict>
 	</dict>
 </dict>
